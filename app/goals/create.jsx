@@ -1,65 +1,93 @@
-import { useState } from 'react'
-import { StyleSheet, Text, TextInput, Pressable, Keyboard } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { useGoals } from '../../hooks/useGoals'
-import { useRouter } from 'expo-router'
+import { useState } from "react";
+import { StyleSheet, Text, TextInput, Pressable, Keyboard } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useGoals } from "../../hooks/useGoals";
+import { useRouter } from "expo-router";
+import { LinearGradient } from "expo-linear-gradient";
 
 const Create = () => {
-  const [goal, setGoal] = useState('')
-  const {createGoal} = useGoals()
-  const router = useRouter
-  
-  const handleSubmit = async () => {
-    await createGoal({
-      goal,
-      progress:0
-    })
-    setGoal ('')
-    Keyboard.dismiss()
-    router.push('/goals')
+  const [goal, setGoal] = useState("");
+  const { createGoal, fetchGoals } = useGoals();
+  const router = useRouter();
 
-  }
+  const handleSubmit = async () => {
+    if (!goal.trim()) return;
+    await createGoal({
+      name: goal,
+      progress: 0,
+    });
+    setGoal("");
+    Keyboard.dismiss();
+    await fetchGoals(); // Instantly update goals list
+    router.push("/goals");
+  };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Create a New Goal</Text>
+    <LinearGradient
+      colors={["#ba43df", "#ff6ec4", "#4facfe"]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 0, y: 1 }}
+      style={styles.container}
+    >
+      <SafeAreaView style={styles.safe}>
+        <Text style={styles.title}>Create a New Goal</Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="What do you want to do?"
-        value={goal}
-        onChangeText={setGoal}
-      />
+        <TextInput
+          style={styles.input}
+          placeholder="What do you want to do?"
+          placeholderTextColor="#aaa"
+          value={goal}
+          onChangeText={setGoal}
+        />
 
-      <Pressable onPress={handleSubmit} style={styles.button}>
-        <Text style={{color: 'white'}}>Add New Goal</Text>
-      </Pressable>
-    </SafeAreaView>
-  )
-}
+        <Pressable onPress={handleSubmit} style={styles.button}>
+          <Text style={styles.buttonText}>Add New Goal</Text>
+        </Pressable>
+      </SafeAreaView>
+    </LinearGradient>
+  );
+};
 
-export default Create
+export default Create;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+  },
+  safe: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 20,
   },
   title: {
-    fontSize: 24,
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "white",
+    marginBottom: 40,
+    textAlign: "center",
   },
   input: {
-    width: 300,
-    backgroundColor: 'white',
-    padding: 20,
-    borderRadius: 8,
-    marginVertical: 40,
+    width: "95%",
+    maxWidth: 400,
+    backgroundColor: "rgba(255,255,255,0.9)",
+    padding: 16,
+    borderRadius: 10,
+    marginBottom: 20,
+    fontSize: 16,
   },
   button: {
-    padding: 18,
-    backgroundColor: '#df0b0bff',
-    color: 'white',
-    borderRadius: 8,
-  }
-})
+    paddingVertical: 14,
+    paddingHorizontal: 24,
+    backgroundColor: "rgba(0,0,0,0.5)",
+    borderRadius: 10,
+    width: "95%",
+    maxWidth: 400,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: "white",
+    fontWeight: "600",
+    fontSize: 16,
+  },
+});
