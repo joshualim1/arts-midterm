@@ -15,11 +15,11 @@ const UpdateGoals = () => {
   if (!id) {
     return (
       <LinearGradient
-        colors={["#ba43df", "#ff6ec4", "#4facfe"]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 0, y: 1 }}
-        style={styles.container}
-      >
+            colors={["#f3e34fff", "#d89b40ff", "#f33a2dff"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 0, y: 1 }}
+            style={styles.container}
+          >
         <SafeAreaView style={styles.safe}>
           <Text style={styles.title}>Update Goal</Text>
           <Text style={styles.warning}>Please click Edit in your inserted goals.</Text>
@@ -39,11 +39,11 @@ const UpdateGoals = () => {
 
   return (
     <LinearGradient
-      colors={["#ba43df", "#ff6ec4", "#4facfe"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 0, y: 1 }}
-      style={styles.container}
-    >
+            colors={["#f3e34fff", "#d89b40ff", "#f33a2dff"]}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 0, y: 1 }}
+            style={styles.container}
+          >
       <SafeAreaView style={styles.safe}>
         <Text style={styles.title}>Update Goal</Text>
 

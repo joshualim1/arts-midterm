@@ -24,11 +24,11 @@ const Create = () => {
 
   return (
     <LinearGradient
-      colors={["#ba43df", "#ff6ec4", "#4facfe"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: 0, y: 1 }}
-      style={styles.container}
-    >
+          colors={["#f3e34fff", "#d89b40ff", "#f33a2dff"]}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 0, y: 1 }}
+          style={styles.container}
+        >
       <SafeAreaView style={styles.safe}>
         <Text style={styles.title}>Create a New Goal</Text>
 

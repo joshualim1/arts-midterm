@@ -75,7 +75,7 @@ const WebConfirmModal = ({ visible, onConfirm, onCancel }) => {
               borderRadius: 8,
               border: "none",
               cursor: "pointer",
-              background: "linear-gradient(180deg, #ba43df 0%, #ff6ec4 50%, #4facfe 100%)",
+              background: "linear-gradient(180deg, #eca130ff 0%, #d89b40ff 50%, #fe4f4fff 100%)",
             }}
           >
             Sign Out

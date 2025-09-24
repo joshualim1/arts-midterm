@@ -10,7 +10,7 @@ export default function GoalsLayout() {
       <Tabs
         screenOptions={{
           headerShown: false,
-          tabBarActiveTintColor: "#ff6ec4", // active = pink gradient tone
+          tabBarActiveTintColor: "#e6a964ff", // active = pink gradient tone
           tabBarInactiveTintColor: "white", // inactive = white
           tabBarStyle: {
             position: "absolute",
@@ -26,8 +26,8 @@ export default function GoalsLayout() {
           },
           tabBarActiveBackgroundColor:
             Platform.OS === "web"
-              ? "rgba(186, 67, 223, 0.25)" // hover effect on web
-              : "rgba(186, 67, 223, 0.4)", // pressed effect native
+              ? "rgba(214, 151, 57, 0.25)" // hover effect on web
+              : "rgba(228, 169, 60, 0.4)", // pressed effect native
           tabBarLabelStyle: {
             fontSize: 12,
             fontWeight: "600",

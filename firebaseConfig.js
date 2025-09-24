@@ -3,12 +3,13 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth"; // <-- Add this
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDow-HgWPikI1RQLD0qXoLHGxc-mkuQ7mw",
-  authDomain: "mobile-app-schedminder.firebaseapp.com",
-  projectId: "mobile-app-schedminder",
-  storageBucket: "mobile-app-schedminder.firebasestorage.app",
-  messagingSenderId: "308960709086",
-  appId: "1:308960709086:web:1baf123b1cac2aa5ecf54f"
+  apiKey: "AIzaSyCt7-qYTZIJyfBM2Ao0V4kGFgl5VDJ4WGk",
+  authDomain: "mobile-app---arts-fd76f.firebaseapp.com",
+  projectId: "mobile-app---arts-fd76f",
+  storageBucket: "mobile-app---arts-fd76f.firebasestorage.app",
+  messagingSenderId: "553687976737",
+  appId: "1:553687976737:web:dd625560e619b443e30c60",
+  measurementId: "G-NSXWEMQ27J"
 };
 
 const app = initializeApp(firebaseConfig);
