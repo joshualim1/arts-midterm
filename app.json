@@ -15,8 +15,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+<<<<<<< HEAD
       },
       "package": "com.joshualim187.mygoals"
+=======
+      }
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +41,7 @@
     ],
     "experiments": {
       "typedRoutes": true
+<<<<<<< HEAD
     },
     "extra": {
       "router": {},
@@ -45,5 +50,8 @@
       }
     },
     "owner": "joshualim187"
+=======
+    }
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
   }
 }

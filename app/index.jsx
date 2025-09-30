@@ -66,14 +66,22 @@ export default function Home() {
       end={{ x: 0, y: 1 }}
       style={styles.container}
     >
+<<<<<<< HEAD
       <Text style={styles.title}>PET COMPANION</Text>
+=======
+      <Text style={styles.title}>A R T S  G O A L S  T R A C K E R</Text>
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
 
       <Pressable
         style={styles.link}
         onPress={() => requireAuth("/goals")}
         accessibilityRole="button"
       >
+<<<<<<< HEAD
         <Text style={styles.linkText}>View Your Schedule</Text>
+=======
+        <Text style={styles.linkText}>View Your Goals</Text>
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
       </Pressable>
 
       <Pressable
@@ -81,7 +89,11 @@ export default function Home() {
         onPress={() => requireAuth("/goals/create")}
         accessibilityRole="button"
       >
+<<<<<<< HEAD
         <Text style={styles.linkText}>Add A New Schedule</Text>
+=======
+        <Text style={styles.linkText}>Add a New Goal</Text>
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
       </Pressable>
 
       {!user && (

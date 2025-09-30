@@ -38,7 +38,11 @@ export default function GoalsLayout() {
         <Tabs.Screen
           name="index"
           options={{
+<<<<<<< HEAD
             title: "Your Schedules",
+=======
+            title: "Your Goals",
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="home" size={size} color={color} />
             ),
@@ -49,7 +53,11 @@ export default function GoalsLayout() {
         <Tabs.Screen
           name="create"
           options={{
+<<<<<<< HEAD
             title: "Create Schedule",
+=======
+            title: "Create Goal",
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="add-circle" size={size} color={color} />
             ),
@@ -60,7 +68,11 @@ export default function GoalsLayout() {
         <Tabs.Screen
           name="updategoals"
           options={{
+<<<<<<< HEAD
             title: "Update Schedule",
+=======
+            title: "Update Goal",
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="create" size={size} color={color} />
             ),

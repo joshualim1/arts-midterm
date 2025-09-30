@@ -11,9 +11,13 @@ const About = () => {
         >
       <View style={styles.content}>
         <Text style={styles.title}>About</Text>
+<<<<<<< HEAD
         <Text style={styles.text}>" Pet Companion is the ultimate pet scheduling app designed to help pet owners stay on top of their furry friends' needs. From vet appointments and grooming sessions to feeding times and daily walks, PawsPlanner ensures your pet's routine is organized, so you can focus on what really matters—spending quality time together."
 
         </Text>
+=======
+        <Text style={styles.text}>This is a Arts App page.</Text>
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
       </View>
     </LinearGradient>
   );

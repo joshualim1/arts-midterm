@@ -19,10 +19,16 @@
     "@react-native-community/datetimepicker": "^8.4.5",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
+<<<<<<< HEAD
     "expo": "^53.0.23",
     "expo-blur": "~14.1.4",
     "expo-constants": "~17.1.6",
     "expo-dev-client": "~5.2.4",
+=======
+    "expo": "^53.0.8",
+    "expo-blur": "~14.1.4",
+    "expo-constants": "~17.1.6",
+>>>>>>> 59599028a9f57bb919c8d0247a9b14090699e7f1
     "expo-font": "~13.3.1",
     "expo-haptics": "~14.1.4",
     "expo-linear-gradient": "~14.1.5",
