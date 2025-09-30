@@ -27,11 +27,11 @@ const Goals = () => {
 
   const handleDelete = (id) => {
     if (Platform.OS === "web") {
-      if (window.confirm("Are you sure you want to delete this goal?")) {
+      if (window.confirm("Are you sure you want to delete this schedule?")) {
         deleteGoal(id);
       }
     } else {
-      Alert.alert("Delete Goal", "Are you sure you want to delete this goal?", [
+      Alert.alert("Delete Goal", "Are you sure you want to delete this schedule?", [
         { text: "Cancel", style: "cancel" },
         { text: "Delete", style: "destructive", onPress: async () => await deleteGoal(id) },
       ]);
@@ -46,7 +46,7 @@ const Goals = () => {
           style={styles.container}
         >
       <SafeAreaView style={styles.safe}>
-        <Text style={styles.title}>Your Goals</Text>
+        <Text style={styles.title}>Your Schedule</Text>
 
         <FlatList
           data={goals}
@@ -67,7 +67,7 @@ const Goals = () => {
               </View>
             </View>
           )}
-          ListEmptyComponent={<Text style={styles.empty}>No goals found.</Text>}
+          ListEmptyComponent={<Text style={styles.empty}>No   Schedule.</Text>}
         />
       </SafeAreaView>
     </LinearGradient>
